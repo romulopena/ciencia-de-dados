@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
 
 :root{
-    --bg-color:#B7E0FF;
-    --primary-color:#fdfd96; 
-    --secondary-color:#ffffff;
-    --tipo-fonte:"Figtree", sans-serif;
+    --bg-color:#F0E9E9;
+    --primary-color:#C19191;
+    --secondary-color:#8B5D5D;
+    --tipo-fonte:"Markazi Text", sans-serif;
 }
 body{
     background-color: var(--bg-color);
@@ -16,28 +16,29 @@ body{
 header{
     background-color: var(--primary-color);
     text-align: center;
-    padding: 1px;
+    padding: 1px;/*espaço interno do header*/
 }
 h1{
-    font-size: 2rem;
+    font-size: 2rem;/*rem medida do :root*/
     color:var(--bg-color);
-    font-weight: 700;
+    font-weight: 700; /*weight define o negrito*/
 }
 nav{
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
+    display: flex; /*área flexível navegável*/
+    justify-content: center; /*justicar conteúdo ao centro*/
+    font-weight: 400; /*negrito*/
 }
-nav a{
-    text-decoration: none;
-    color:var(--bg-color);
-    margin:0 2rem 1rem 0rem;
-    font-size: 1.2rem;
+nav a{ /*link estático*/
+    text-decoration: none; /*tirar o sublinhado*/
+    color:var(--bg-color); 
+    margin:0 2rem 1rem 0rem; /*espaço externo cima, esquerda
+                                             baixo, direita*/
+    font-size: 1.2rem;  /*tamanho da letra equivalente a 18px*/
 }
-nav a:hover{
-    text-decoration: underline;
-    transform: scale(0.90);
-    transition: transform 0.1s;
+nav a:hover{ /*link ao passar o mouse*/
+    text-decoration: underline; /*insere o sublinhado*/
+    transform: scale(0.90); /* diminui o tamanho do texto em 90%*/
+    transition: transform 0.1s; /*tempo da transformação*/
 }
 
 .grafico {
