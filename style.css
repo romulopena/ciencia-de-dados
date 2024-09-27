@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --bg-color:#F0E9E9;
-    --primary-color:#C19191;
-    --secondary-color:#8B5D5D;
-    --tipo-fonte:"Markazi Text", sans-serif;
+    --bg-color: #4379F2;
+    --primary-color: #FFEB00;
+    --secondary-color: #117554;
+    --tipo-fonte: "Genos", sans-serif;
+
 }
 body{
     background-color: var(--bg-color);
     color:var(--primary-color);
     font-family: var(--tipo-fonte);
-    height: 100vh;
-    margin:0;
+    height: 100vh; /*altura em porcentagem do body*/
+    margin:0; /*espaço externo da borda geral*/
 }
 header{
     background-color: var(--primary-color);
@@ -19,7 +20,7 @@ header{
     padding: 1px;/*espaço interno do header*/
 }
 h1{
-    font-size: 2rem;/*rem medida do :root*/
+    font-size: 2rem;/*tamanho da letra, medida rem do :root*/
     color:var(--bg-color);
     font-weight: 700; /*weight define o negrito*/
 }
@@ -35,7 +36,7 @@ nav a{ /*link estático*/
                                              baixo, direita*/
     font-size: 1.2rem;  /*tamanho da letra equivalente a 18px*/
 }
-nav a:hover{ /*link ao passar o mouse*/
+nav a:hover{ /*link interativo ao passar o mouse*/
     text-decoration: underline; /*insere o sublinhado*/
     transform: scale(0.90); /* diminui o tamanho do texto em 90%*/
     transition: transform 0.1s; /*tempo da transformação*/
