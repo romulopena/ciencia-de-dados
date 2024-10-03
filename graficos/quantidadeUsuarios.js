@@ -5,7 +5,7 @@ async function quantidadeUsuarios() {
     const dados = await res.json()
     const nomeDasRedes = Object.keys(dados)
     const quantidadeUsuarios = Object.values(dados)
-
+    https://raw.githubusercontent.com/romulopena/ciencia-de-dados/refs/heads/main/basededados/educacao-dados-globais.json
     const data = [
         {
             x: nomeDasRedes,
