@@ -1,4 +1,4 @@
-const url = 'https://raw.githubusercontent.com/romulopena/ciencia-de-dados/refs/heads/main/basededados/educacao-dados-globais.json'
+const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/dados-globais.json'
 
 async function visualizarInformacoesGlobais(){
     const res = await fetch (url)
