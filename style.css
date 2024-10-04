@@ -27,7 +27,7 @@ h1{
 }
 nav{
     display: flex; /*área flexível navegável*/
-    justify-content: center; /*justicar conteúdo 
+    justify-content: center; /*justificar conteúdo 
                             ao centro*/
     font-weight: 400; /*negrito*/
 }

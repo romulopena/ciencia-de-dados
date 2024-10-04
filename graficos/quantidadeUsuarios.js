@@ -3,13 +3,13 @@ async function quantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/romulopena/ciencia-de-dados/refs/heads/main/basededados/educacao-etapas-de-ensino.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = Object.keys(dados)
-    const quantidadeUsuarios = Object.values(dados)
+    const nomeDasInstituicoes = Object.keys(dados)
+    const quantidadeAlunos = Object.values(dados)
     
     const data = [
         {
-            x: nomeDasRedes,
-            y: quantidadeUsuarios,
+            x: nomeDasInstituicoes,
+            y: quantidadeAlunos,
             type: 'bar',
             marker: {
                 color: getCSS('--primary-color')
@@ -21,7 +21,7 @@ async function quantidadeUsuarios() {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
         title: {
-            text: 'Redes Sociais com mais usuários no mundo',
+            text: 'Instituições com mais alunos no mundo',
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
@@ -33,7 +33,8 @@ async function quantidadeUsuarios() {
         xaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'nome das redes sociais',
+                text: 'Tipos de Instituições',
+                size: 20,
                 font: {
                     color: getCSS('--secondary-color')
                 }
@@ -42,7 +43,8 @@ async function quantidadeUsuarios() {
         yaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'bilhões de usuários ativos',
+                text: 'bilhões de alunos ativos',
+                size:20,
                 font: {
                     color: getCSS('--secondary-color')
                 }
