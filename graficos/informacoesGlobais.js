@@ -1,7 +1,7 @@
 const url = 'https://raw.githubusercontent.com/romulopena/ciencia-de-dados/refs/heads/main/basededados/educacao-dados-globais.json'
 
 async function visualizarInformacoesGlobais(){
-    const res = await fetch (url)
+    const res = await fetch(url)
     const dados = await res.json()
     const pessoasComAcesso = (dados.total_pessoas_com_acesso_a_educacao / 1e9)
     const pessoasNoMundo = (dados.total_pessoas_mundo / 1e9)
@@ -19,4 +19,3 @@ async function visualizarInformacoesGlobais(){
 }
 
 visualizarInformacoesGlobais();
-
